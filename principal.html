@@ -9,86 +9,246 @@
     <link rel="stylesheet" href="media.css">
 
     <style>
-        body {
-            background-color: #111;
+
+        body{
+            background-color: #141414;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
         }
 
-        .container {
-            padding: 40px;
+        .cabecario{
+            padding: 20px;
         }
 
-        .container__lista {
+        .cabecario__lista{
+            display: flex;
+            align-items: center;
+            gap: 20px;
             list-style: none;
-            padding: 0;
         }
 
-        .container__video {
-            margin: 15px 0;
-        }
-
-        a {
-            color: red;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        a:hover {
+        .cabecario__link{
             color: white;
+            text-decoration: none;
         }
+
+        .cabecario__link:hover{
+            color: red;
+        }
+
+        .nlogo{
+            width:40px;
+        }
+
+        .container{
+            padding: 20px;
+        }
+
+        .container__lista{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .container__video img{
+            width:200px;
+            border-radius:8px;
+            transition:0.3s;
+        }
+
+        .container__video img:hover{
+            transform:scale(1.08);
+        }
+
+        .desc{
+            margin-top:5px;
+        }
+
+        .container__titulo{
+            width:300px;
+            margin:20px;
+        }
+
+        .botao__assistir{
+            background:red;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:5px;
+            margin-left:20px;
+        }
+
+        .rodape{
+            text-align:center;
+            margin-top:50px;
+            padding:20px;
+            color:#aaa;
+        }
+
     </style>
+
 </head>
 
 <body>
 
 <header class="cabecario">
+
     <ul class="cabecario__lista">
-        <li><a href="principal.html">Início</a></li>
-        <li><a href="principal.html">Séries</a></li>
-        <li><a href="principal.html">Filmes</a></li>
-        <li><a href="principal.html">Minha lista</a></li>
+
+        <li>
+            <img src="Nlogo.png" class="nlogo">
+        </li>
+
+        <li>
+            <a href="principal.html" class="cabecario__link">Início</a>
+        </li>
+
+        <li>
+            <a href="principal.html" class="cabecario__link">Séries</a>
+        </li>
+
+        <li>
+            <a href="principal.html" class="cabecario__link">Filmes</a>
+        </li>
+
+        <li>
+            <a href="principal.html" class="cabecario__link">Minha lista</a>
+        </li>
+
     </ul>
+
 </header>
 
+
+<section>
+
+    <img src="Titulo.png" class="container__titulo">
+
+    <br>
+
+    <a href="filme1.html" class="botao__assistir">
+        Assistir
+    </a>
+
+</section>
+
+
+
 <section class="container">
+
     <h2>Assistir novamente</h2>
 
-    <ul class="container__lista">
+    <div class="container__lista">
 
-        <li class="container__video">
-            <a href="filme1.html">GABY</a>
-        </li>
 
-        <li class="container__video">
-            <a href="filme2.html">Através da Minha Janela</a>
-        </li>
+        <div class="container__video">
 
-        <li class="container__video">
-            <a href="filme3.html">Sua Culpa</a>
-        </li>
+            <a href="filme1.html">
 
-        <li class="container__video">
-            <a href="filme4.html">Para Todos os Garotos Que Já Amei</a>
-        </li>
+                <img src="video1.png">
 
-    </ul>
+                <div class="desc">
+                    GABY
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="container__video">
+
+            <a href="filme2.html">
+
+                <img src="video2.png">
+
+                <div class="desc">
+                    Através da Minha Janela
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="container__video">
+
+            <a href="filme3.html">
+
+                <img src="video3.png">
+
+                <div class="desc">
+                    Sua Culpa
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="container__video">
+
+            <a href="filme4.html">
+
+                <img src="video4.png">
+
+                <div class="desc">
+                    Para Todos os Garotos Que Já Amei
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+    </div>
+
 </section>
+
+
+
 
 <section class="container">
+
     <h2>Minha Lista</h2>
 
-    <ul class="container__lista">
-        <li class="container__video">
-            <a href="filme5.html">GABY</a>
-        </li>
-    </ul>
+    <div class="container__lista">
+
+
+        <div class="container__video">
+
+            <a href="filme5.html">
+
+                <img src="video5.png">
+
+                <div class="desc">
+                    GABY
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+    </div>
+
 </section>
 
+
+
 <footer class="rodape">
-    <h2>Feito Para pessoas que eu gosto</h2>
+
+    Feito Para pessoas que eu gosto
+
 </footer>
 
+
 </body>
+
 </html>
