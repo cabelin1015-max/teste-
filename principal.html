@@ -3,31 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filme - Netflix</title>
+    <title>Inicio - Netflix</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 
     <style>
-        body {
-            background-color: #111;
-            color: white;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 80px;
-        }
-
-        video {
-            width: 80%;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        .cropped {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -38,20 +23,75 @@
     <ul class="cabecario__lista">
         <li>
             <img src="Nlogo.png" class="nlogo">
-            <img src="Netflix_logo.png" class="cabecario__item container__logo">
+            <img src="Netflix_logo.png" class="cabecario__item container__logo sumir__mobile">
         </li>
-        <li class="cabecario__item">
-            <a href="principal.html" class="cabecario__link">Início</a>
-        </li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Início</a></li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Séries</a></li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Filmes</a></li>
+        <li class="cabecario__item mobile__sumir"><a href="principal.html" class="cabecario__link">Minha lista</a></li>
     </ul>
 </header>
 
-<div class="video-container">
-    <video controls>
-        <source src="videoprincipal1.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-    </video>
-</div>
+<section class="container__background">
+    <img src="Titulo.png" class="container__titulo">
+
+    <div class="container__botao">
+        <a href="filme5.html" class="botao__assistir">Assistir</a>
+    </div>
+</section>
+
+<section class="container">
+    <p class="container__texto">Assistir novamente</p>
+    <ul class="container__lista">
+
+        <li class="container__video">
+            <a href="filme1.html">
+                <img src="video1.png" class="cropped">
+                <div class="desc">GABY</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme2.html">
+                <img src="video2.png" class="cropped">
+                <div class="desc">através da minha janela</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme3.html">
+                <img src="video3.png" class="cropped">
+                <div class="desc">sua culpa</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme4.html">
+                <img src="video4.png" class="cropped">
+                <div class="desc">Para Todos os Garotos Que Já Amei</div>
+            </a>
+        </li>
+
+    </ul>
+</section>
+
+<section class="container">
+    <p class="container__texto">Minha Lista</p>
+    <ul class="container__lista">
+
+        <li class="container__video">
+            <a href="filme5.html">
+                <img src="video5.png" class="cropped">
+                <div class="desc">GABY</div>
+            </a>
+        </li>
+
+    </ul>
+</section>
+
+<footer class="rodape">
+    <h2 class="rodape__texto">Feito Para pessoas que eu gosto</h2>
+</footer>
 
 </body>
 </html>
