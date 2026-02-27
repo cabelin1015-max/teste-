@@ -9,10 +9,34 @@
     <link rel="stylesheet" href="media.css">
 
     <style>
-        .cropped {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .container__lista {
+            list-style: none;
+            padding: 0;
+        }
+
+        .container__video {
+            margin: 15px 0;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: white;
         }
     </style>
 </head>
@@ -21,76 +45,49 @@
 
 <header class="cabecario">
     <ul class="cabecario__lista">
-        <li>
-            <img src="Nlogo.png" class="nlogo">
-            <img src="Netflix_logo.png" class="cabecario__item container__logo sumir__mobile">
-        </li>
-        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Início</a></li>
-        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Séries</a></li>
-        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Filmes</a></li>
-        <li class="cabecario__item mobile__sumir"><a href="principal.html" class="cabecario__link">Minha lista</a></li>
+        <li><a href="principal.html">Início</a></li>
+        <li><a href="principal.html">Séries</a></li>
+        <li><a href="principal.html">Filmes</a></li>
+        <li><a href="principal.html">Minha lista</a></li>
     </ul>
 </header>
 
-<section class="container__background">
-    <img src="Titulo.png" class="container__titulo">
-
-    <div class="container__botao">
-        <a href="filme5.html" class="botao__assistir">Assistir</a>
-    </div>
-</section>
-
 <section class="container">
-    <p class="container__texto">Assistir novamente</p>
+    <h2>Assistir novamente</h2>
+
     <ul class="container__lista">
 
         <li class="container__video">
-            <a href="filme1.html">
-                <img src="video1.png" class="cropped">
-                <div class="desc">GABY</div>
-            </a>
+            <a href="filme1.html">GABY</a>
         </li>
 
         <li class="container__video">
-            <a href="filme2.html">
-                <img src="video2.png" class="cropped">
-                <div class="desc">através da minha janela</div>
-            </a>
+            <a href="filme2.html">Através da Minha Janela</a>
         </li>
 
         <li class="container__video">
-            <a href="filme3.html">
-                <img src="video3.png" class="cropped">
-                <div class="desc">sua culpa</div>
-            </a>
+            <a href="filme3.html">Sua Culpa</a>
         </li>
 
         <li class="container__video">
-            <a href="filme4.html">
-                <img src="video4.png" class="cropped">
-                <div class="desc">Para Todos os Garotos Que Já Amei</div>
-            </a>
+            <a href="filme4.html">Para Todos os Garotos Que Já Amei</a>
         </li>
 
     </ul>
 </section>
 
 <section class="container">
-    <p class="container__texto">Minha Lista</p>
+    <h2>Minha Lista</h2>
+
     <ul class="container__lista">
-
         <li class="container__video">
-            <a href="filme5.html">
-                <img src="video5.png" class="cropped">
-                <div class="desc">GABY</div>
-            </a>
+            <a href="filme5.html">GABY</a>
         </li>
-
     </ul>
 </section>
 
 <footer class="rodape">
-    <h2 class="rodape__texto">Feito Para pessoas que eu gosto</h2>
+    <h2>Feito Para pessoas que eu gosto</h2>
 </footer>
 
 </body>
